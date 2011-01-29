@@ -877,7 +877,7 @@ static NSString *MMWideCharacterAttributeName = @"MMWideChar";
 
 - (NSRect)boundingRectForCharacterAtRow:(int)row column:(int)col
 {
-#if 1
+#if 0 // 0: for unfixed font 1: fixed font
     // This properly computes the position of where Vim expects the glyph to be
     // drawn.  Had the typesetter actually computed the right position of each
     // character and not hidden some, this code would be correct.
